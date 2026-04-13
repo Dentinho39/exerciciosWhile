@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Exercicio6 {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
         int contador = 1;
         int numero;
         int menor;
 
         System.out.println("Digite o 1º número: ");
-        numero = scanner.nextInt();
+        numero = entrada.nextInt();
         menor = numero;
 
         while (contador < 10) {
             System.out.printf("%nDigite o %dº número: " , contador + 1);
-            numero = scanner.nextInt();
+            numero = entrada.nextInt();
 
             if (numero < menor) {
                 menor = numero;
@@ -28,6 +28,6 @@ public class Exercicio6 {
 
         System.out.println("O menor número é: " + menor);
 
-        scanner.close();
+        entrada.close();
     }
 }
